@@ -1,0 +1,248 @@
+{
+	"Id": "283dd48c6e5a501dbe8670e5cc84163ef08f59507f48864c71e3b1699ba0d1a0",
+	"Created": "2026-02-01T20:56:16.438927959Z",
+	"Path": "/bin/sh",
+	"Args": [
+		"-c",
+		"echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 & wait $!; do :; done",
+		"-"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 613,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2026-02-03T15:21:55.812968547Z",
+		"FinishedAt": "2026-02-01T21:12:06.869537857Z"
+	},
+	"Image": "sha256:4dd4d9b992e94f56b1ff14ab44f7959e7d3e1ef23ff3f8e0dd1e39bb09d16060",
+	"ResolvConfPath": "/var/lib/docker/containers/283dd48c6e5a501dbe8670e5cc84163ef08f59507f48864c71e3b1699ba0d1a0/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/283dd48c6e5a501dbe8670e5cc84163ef08f59507f48864c71e3b1699ba0d1a0/hostname",
+	"HostsPath": "/var/lib/docker/containers/283dd48c6e5a501dbe8670e5cc84163ef08f59507f48864c71e3b1699ba0d1a0/hosts",
+	"LogPath": "/var/lib/docker/containers/283dd48c6e5a501dbe8670e5cc84163ef08f59507f48864c71e3b1699ba0d1a0/283dd48c6e5a501dbe8670e5cc84163ef08f59507f48864c71e3b1699ba0d1a0-json.log",
+	"Name": "/funny_satoshi",
+	"RestartCount": 0,
+	"Driver": "overlayfs",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": [
+		"c2fa513bd2c12c4bffbd6ff13ecabaf37cb3d33b4fa6a078b677ea56c5f995f6",
+		"8682993132de4563d9693251b9aa9b5e89b12ba51e8b38bdef903920ad09c0fb",
+		"1c280cf0bb5215bce5dffc284658d50c3a8070cdc99d434d5e996b18dbfff6e7",
+		"ce979dda761cbaaf65918e45482667b72015bb4808bf435d02e53f95c4410319",
+		"c32e47117140e6ab4206f6e0ada51fab4b540077b3e7cb079a532e75267ebd68",
+		"90963eaded0b68c21442ac409e4ed8c5c3d0277c0de65ec891941ce272353b82",
+		"cfb584b80b730ce103b34a8a83da09392f3b7e2830421b07b782ff8a97f52aa0"
+	],
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {}
+		},
+		"NetworkMode": "bridge",
+		"PortBindings": {},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			29,
+			102
+		],
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": [],
+		"DnsOptions": [],
+		"DnsSearch": [],
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "private",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 0,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": null,
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 0,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": [],
+		"BlkioDeviceReadBps": [],
+		"BlkioDeviceWriteBps": [],
+		"BlkioDeviceReadIOps": [],
+		"BlkioDeviceWriteIOps": [],
+		"CpuPeriod": 0,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": [],
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": [],
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"Mounts": [
+			{
+				"Type": "bind",
+				"Source": "c:\\Program Files\\malcolm",
+				"Target": "/workspaces/malcolm",
+				"Consistency": "cached"
+			},
+			{
+				"Type": "volume",
+				"Source": "vscode",
+				"Target": "/vscode"
+			}
+		],
+		"MaskedPaths": [
+			"/proc/acpi",
+			"/proc/asound",
+			"/proc/interrupts",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/sys/devices/virtual/powercap",
+			"/sys/firmware"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		]
+	},
+	"Storage": {
+		"RootFS": {
+			"Snapshot": {
+				"Name": "overlayfs"
+			}
+		}
+	},
+	"Mounts": [
+		{
+			"Type": "bind",
+			"Source": "c:\\Program Files\\malcolm",
+			"Destination": "/workspaces/malcolm",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "volume",
+			"Name": "vscode",
+			"Source": "/var/lib/docker/volumes/vscode/_data",
+			"Destination": "/vscode",
+			"Driver": "local",
+			"Mode": "z",
+			"RW": true,
+			"Propagation": ""
+		}
+	],
+	"Config": {
+		"Hostname": "283dd48c6e5a",
+		"Domainname": "",
+		"User": "root",
+		"AttachStdin": false,
+		"AttachStdout": true,
+		"AttachStderr": true,
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+		],
+		"Cmd": [
+			"-c",
+			"echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 & wait $!; do :; done",
+			"-"
+		],
+		"Image": "vsc-malcolm-f822f009f382af034ae4339fc208f501e6cce9166bcc2295ae89f42e96843ec0-features",
+		"Volumes": null,
+		"WorkingDir": "/",
+		"Entrypoint": [
+			"/bin/sh"
+		],
+		"Labels": {
+			"dev.containers.id": "base-alpine",
+			"dev.containers.release": "v0.4.19",
+			"dev.containers.source": "https://github.com/devcontainers/images",
+			"dev.containers.timestamp": "Thu, 16 Oct 2025 10:40:47 GMT",
+			"dev.containers.variant": "3.20",
+			"devcontainer.config_file": "c:\\Program Files\\malcolm\\.devcontainer\\devcontainer.json",
+			"devcontainer.local_folder": "c:\\Program Files\\malcolm",
+			"devcontainer.metadata": "[ {\"id\":\"./local-features/git\"}, {\"id\":\"ghcr.io/devcontainers/features/common-utils:2\"}, {\"remoteUser\":\"vscode\"}, {\"id\":\"ghcr.io/devcontainers-extra/features/act:1\"} ]",
+			"version": "1.0.2"
+		},
+		"StopTimeout": 1
+	},
+	"NetworkSettings": {
+		"SandboxID": "bd4ce0c42a24d4f3f1e407c09ceedd475fc7c3772dfd9ab394295df2b0a5468b",
+		"SandboxKey": "/var/run/docker/netns/bd4ce0c42a24",
+		"Ports": {},
+		"Networks": {
+			"bridge": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"DriverOpts": null,
+				"GwPriority": 0,
+				"NetworkID": "e67893a5c17a524223bcde512bfad033cd0ef8c5523cee5b6217a0de863d777e",
+				"EndpointID": "1fad4b186bba5272a6d340f8e92b1d4e8a9fb676a44dbd62c9c3b6bfa3063d1f",
+				"Gateway": "172.17.0.1",
+				"IPAddress": "172.17.0.2",
+				"MacAddress": "1a:47:7b:ae:66:dd",
+				"IPPrefixLen": 16,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"DNSNames": null
+			}
+		}
+	},
+	"ImageManifestDescriptor": {
+		"mediaType": "application/vnd.oci.image.manifest.v1+json",
+		"digest": "sha256:6fe0846ab9dfce764144d565b3756c96fd656ae40f3adc01013843bd8997fced",
+		"size": 2375,
+		"platform": {
+			"architecture": "amd64",
+			"os": "linux"
+		}
+	},
+	"Ports": []
+}
